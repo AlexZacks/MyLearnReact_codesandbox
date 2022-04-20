@@ -1,12 +1,18 @@
-.App {
+.H1 {
   font-family: sans-serif;
-  text-align:center;
+  text-align: center;
+  color: white;
+  text-shadow: rgb(200, 100, 10) 1px 1px 2px, rgba(0, 4, 255, 0.575) 0 0 1em;
 }
-.Ff{
-  border: 2px solid red;
+.Tbl {
+  border: 5px double rgb(200, 100, 10);
   border-spacing: 0px;
   width: 100%;
 }
-.Cc{
-  border: 1px solid red;
+.Cell {
+  font-family: sans-serif;
+  border: 1px inset rgb(200, 100, 10);
+  background: linear-gradient(#0004df, rgb(4, 2, 100));
+  color: white;
+  padding: 20px;
 }

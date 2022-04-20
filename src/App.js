@@ -1,12 +1,33 @@
 import "./styles.css";
-import {w,T,T1} from './my';
-
+//import {word,Row,Cell} from './my';
 export default function App() {
+  const word = "Exchange";
+  const Row = () => {
+    return <tr></tr>;
+  };
+  const Cell = () => {
+    return <td className="Cell"></td>;
+  };
   return (
-    <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen! {w}</h2>
-      <table className='Ff'><T/><T1/><T1/><T/><T1/><T1/></table>
+    <div>
+      <h1 className="H1">{word}</h1>
+      <table className="Tbl">
+        <Row />
+        <Cell />
+        <Cell />
+        <Row />
+        <Cell />
+        <Cell />
+        <Row />
+        <Cell />
+        <Cell />
+        <Row />
+        <Cell />
+        <Cell />
+        <Row />
+        <Cell />
+        <Cell />
+      </table>
     </div>
   );
 }

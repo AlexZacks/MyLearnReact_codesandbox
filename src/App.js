@@ -5,18 +5,18 @@ export default function App() {
   const Row = () => {
     return <tr></tr>;
   };
-  const Cell = () => {
-    return <td className="Cell"></td>;
+  const Cell = (propos) => {
+    return <td className="Cell">{propos.n}</td>;
   };
   return (
     <div>
       <h1 className="H1">{word}</h1>
       <table className="Tbl">
         <Row />
-        <Cell />
+        <Cell n="USD/KZT" />
         <Cell />
         <Row />
-        <Cell />
+        <Cell n="EU/KZT" />
         <Cell />
         <Row />
         <Cell />

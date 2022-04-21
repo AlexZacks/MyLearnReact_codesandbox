@@ -1,8 +1,10 @@
 import "./styles.css";
-export const word = "Exchange";
-export const Row = () => {
+
+const word = "Exchange";
+const Row = () => {
   return <tr></tr>;
 };
-export const Cell = () => {
-  return <td className="Cell"></td>;
+const Cell = (propos) => {
+  return <td className={propos.c}>{propos.n}</td>;
 };
+export { word, Row, Cell };

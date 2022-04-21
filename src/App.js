@@ -1,32 +1,26 @@
 import "./styles.css";
-//import {word,Row,Cell} from './my';
+import { word, Row, Cell } from "./my";
+
 export default function App() {
-  const word = "Exchange";
-  const Row = () => {
-    return <tr></tr>;
-  };
-  const Cell = (propos) => {
-    return <td className="Cell">{propos.n}</td>;
-  };
   return (
     <div>
       <h1 className="H1">{word}</h1>
       <table className="Tbl">
         <Row />
-        <Cell n="USD/KZT" />
-        <Cell />
+        <Cell c="Cell" n="USD/KZT" />
+        <Cell c="Cell1" n="s" />
         <Row />
-        <Cell n="EU/KZT" />
-        <Cell />
+        <Cell c="Cell" n="EU/KZT" />
+        <Cell c="Cell1" n="s" />
         <Row />
-        <Cell />
-        <Cell />
+        <Cell c="Cell" n="USD/RUB" />
+        <Cell c="Cell1" n="s" />
         <Row />
-        <Cell />
-        <Cell />
+        <Cell c="Cell" n="EU/RUB" />
+        <Cell c="Cell1" n="s" />
         <Row />
-        <Cell />
-        <Cell />
+        <Cell c="Cell" n="RUB/KZT" />
+        <Cell c="Cell1" n="s" />
       </table>
     </div>
   );
